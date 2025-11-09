@@ -1,0 +1,25 @@
+html{
+    font-family: 'Montserrat', Playfair, sans-serif ;
+}
+
+body{ 
+    background-color: #fff7eb;
+}
+
+header{
+    font-family: 'playfair', sans-serif;
+    font-weight: 700;
+    font-size: 8rem;
+    background-color: #b7ac49;
+    color: #fff7eb;
+    padding: 1rem;
+    padding-left: 2rem;
+}
+
+a { 
+    text-decoration: none;
+    font-size: 1.4rem;
+    color: #fff7eb;
+    font-family: 'Montserrat', serif;
+    
+}
