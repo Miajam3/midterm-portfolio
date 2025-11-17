@@ -3,23 +3,49 @@ html{
 }
 
 body{ 
-    background-color: #fff7eb;
+    background-color: #0C181D;
 }
 
 header{
     font-family: 'playfair', sans-serif;
-    font-weight: 700;
+    font-weight: 900;
     font-size: 8rem;
-    background-color: #b7ac49;
-    color: #fff7eb;
+    /* background-color: #b7ac49; */
+    color: #b7ac49;
+    font-size: 10rem;
     padding: 1rem;
     padding-left: 2rem;
+        display: Flex;
+        justify-content:center;
+        align-items: center;
+        
+
 }
 
 a { 
     text-decoration: none;
     font-size: 1.4rem;
     color: #fff7eb;
-    font-family: 'Montserrat', serif;
+    font-family: 'Montserrat', serif;  
+    font-weight: 200;  
+    padding: 0.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+nav{
+    display: Flex;
+    justify-content:end;
+    align-items: flex-start;
+    justify-content: space-around;
+    padding: 3rem;
+    margin-top: 2rem ;
+    margin-bottom: 2rem;
     
+}
+
+
+a:hover{
+    background-color:#fff7eb5c;
+    border-radius: 0.5rem;
 }
