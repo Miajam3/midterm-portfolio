@@ -49,3 +49,46 @@ a:hover{
     background-color:#fff7eb5c;
     border-radius: 0.5rem;
 }
+
+.gallery-page{
+    background-color: #fff7eb;
+    color: #0C181D;
+
+}
+
+.postcard img{
+    width: 300;
+    height: auto;
+    margin: 2rem;
+    border-color: #0C181D;
+    
+}
+
+.postcard {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 2rem;
+    padding: 2rem;  
+}
+
+.Home-button{
+    color: #0C181D; 
+    font-family: 'Montserrat';
+    
+}
+
+.Home-button:hover{
+    background-color: #bd4c0f86;
+    color: #fff7eb;
+
+}
+
+.about-page { 
+    background-color: #fff7eb;
+
+}
+
+h1{
+    font-family: 'Montserrat';
+    
+}
