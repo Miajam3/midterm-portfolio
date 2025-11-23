@@ -56,20 +56,7 @@ a:hover{
 
 }
 
-/* .postcard img{
-    width: 300;
-    height: auto;
-    margin: 2rem;
-    border-color: #0C181D;
-    
-} */
 
-/* .postcard {
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    gap: 2rem;
-    padding: 2rem;  
-} */
 
 .Home-button{
     color: #0C181D; 
@@ -92,21 +79,45 @@ a:hover{
 }
 
 h1{ 
-    font-size: 2rem;
+    font-size: 2.5rem;
     font-family: 'Montserrat' ;
-    color: #fff7eb;
+    color: #BD4C0F;
     text-align: center;
     padding: 2rem;
-    background-color: #BD4C0F;
-    border-radius: 2rem;
+    /* background-color: #BD4C0F;
+    border-radius: 1.5rem; */
     margin-bottom: 5rem;
+    /* margin-left: 10rem;
+    margin-right: 10rem; */
+}
+    /* max-width: fit-content; */
+h2{
+     font-size: 2.5rem;
+    font-family: 'Montserrat' ;
+    color: #BD4C0F;
+    text-align: center;
+    padding: 2rem;
+    margin-bottom: 5rem;
+    margin-top: 5rem;
 
 }
+    
+
+
 
 .Welcome{ 
     font-size: 1.3rem;
     font-family: 'Montserrat' ;
     color: #fff7eb;
     text-align: center;
+    padding: 2rem;
+}
+
+
+
+p{
+    font-size: 1rem;
+    font-family: 'Montserrat' ;
+    color:#0C181D;
     padding: 2rem;
 }
