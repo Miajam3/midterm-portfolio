@@ -18,6 +18,9 @@ header{
         display: Flex;
         justify-content:center;
         align-items: center;
+    margin-bottom: 10rem;
+    margin-top: 5rem;
+
         
 
 }
@@ -62,6 +65,8 @@ a:hover{
     color: #0C181D; 
     font-family: 'Montserrat';
     margin: 2rem;
+    margin-bottom: 5rem;
+
     
 }
 
@@ -121,3 +126,84 @@ p{
     color:#0C181D;
     padding: 2rem;
 }
+
+
+/* .Postcards-container{
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr;
+    gap: 3rem;
+    justify-content: center;
+    margin-left: 8rem;
+} */
+
+
+.poster-container{
+    display: grid;
+    grid-template-rows:1fr 1fr 1fr;
+    gap: 3rem;
+    justify-content: center;
+    margin-left: 8rem;
+    margin-bottom: 2rem;
+}
+
+
+
+
+
+
+
+
+
+
+/* CAROUSEL ANIMATION */
+
+.carousel{
+    margin: 100px auto;
+    width: 95%;
+    /* border: 5px solid #BD4C0F; */
+    display: flex;
+    overflow-y: hidden;
+    flex-direction: column;
+    height: 1000px;
+}
+
+.carousel::-webkit-scrollbar{
+    display: none;
+}
+
+
+.Postcards-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    animation: vertical-scroll 20s infinite linear;
+    padding-right: 2rem;
+}
+
+.card{
+    flex: 0 0 auto;
+    width: 80%;
+    max-width: 420px;
+    
+}
+
+/* @keyframes spin {
+    from {translate: 0%;}
+    to {translate: -100%;}
+} */
+
+
+@keyframes vertical-scroll {
+    from { transform: translateY(0%); }
+    to   { transform: translateY(-100%); } /* move up by the full content height */
+}
+
+
+/* .Arabic-typo{
+    background: #0C181D;
+    padding: 2rem;
+    padding-bottom: 5rem;
+    
+} */
