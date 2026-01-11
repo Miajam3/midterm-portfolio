@@ -6,6 +6,11 @@ body{
     background-color: #0C181D;
 }
 
+.top-section{
+    display: flex;
+    flex-direction: column;
+}
+
 header{
     font-family: 'playfair', sans-serif;
     font-weight: 900;
@@ -220,11 +225,16 @@ p{
 
 
 @media (max-width: 768px) {
-    header{font-size: 4rem;}
-
+    
     nav{
         flex-direction: column;
         align-items: center;
+        order: 2;
+    }
+
+    header{ 
+        font-size: 5rem;
+        order: 1; 
     }
 }
 
