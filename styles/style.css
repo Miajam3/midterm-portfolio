@@ -238,3 +238,42 @@ p{
     }
 }
 
+
+.hero-image{
+    width: 40%;
+    display: block;
+    margin-right: auto;
+    margin-top: -3rem;
+}
+
+
+.hero-figure {
+  position: relative; 
+  /* relative is the reference point for positioning child elements */
+
+}
+
+.speech-bubble { 
+  position: absolute;  /* absolute is positioned relative to the 'parent'*/
+  right: 50px;
+
+  background: #fff7eb;
+  padding: 12px 16px;
+  border-radius: 50px;
+  font-size: 14px;
+}
+
+.speech-bubble::after {
+  content: "";
+  position: absolute;
+  bottom: -8px;
+  left: 24px;
+
+  width: 0;
+  height: 0;
+
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-top: 8px solid #fff7eb;
+}
+
