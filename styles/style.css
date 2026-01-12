@@ -79,51 +79,102 @@ a:hover{
 
 
 /* ABOUT PAGE */
+/* hello header */
+header{ 
+font-family: 'Oi', 'Playfair', sans-serif;
+    font-weight: 400;
+    color: #b7ac49;
+    font-size: 5rem;
+
+    display: Flex;
+    justify-content:center;
+    align-items: center;
+
+    padding-top: 3.5rem;
+
+}
+
 .about-page { 
     background-color: #fff7eb;
     text-align: justify;
-    margin: 2.5rem;
 }
 
 .about-container{
-    display: flex;
-    border: #0C181D solid 2px;
-    margin: 10rem;
+    display: grid;
+    grid-template-columns: 3fr 3fr;
+    margin-left: 10rem;
+    margin-right: 10rem;
+    margin-top: 5rem;
+    margin-bottom: 10rem;
+    align-items: center;
+
+}
+
+.about-content {
+  display: flex;
+  flex-direction: column;
+  padding-right: 5rem;
+
 }
 
 .about-image{
-    width: 30%;
-    margin-right: 2rem;
+    width: 55%;
+    padding-left: 2rem;
+
 }
 
 .about-header{
     font-size: 2.5rem;
-    font-family: 'Oi', 'Montserrat', sans-serif; ;
+    font-family: 'Oi', 'Playfair', sans-serif;
     color: #BD4C0F;
-    padding: 2rem;
-    margin-bottom: 5rem;
-
-    justify-content: flex-end;
+    white-space: nowrap;
+    padding-top: 0;
 }
 
 
 p{
     font-size: 1rem;
-    font-family: 'Montserrat' ;
+    font-family: 'Montserrat', serif;
     color:#0C181D;
-    padding: 1rem;
-    
+    line-height: 1.6rem;
 }
 
-
-h1{ 
-    font-size: 2.5rem;
+.intro{
+    font-size: 1.3rem;
+    font-weight: 400;
     font-family: 'Montserrat' ;
     color: #BD4C0F;
     text-align: center;
-    padding: 2rem;
     margin-bottom: 5rem;
 }
+
+/* SECTION FOR CONTACT */
+h2.contact-info{ 
+    font-size: 1.3rem;
+    font-weight: 400;
+    font-family: 'Montserrat' ;
+    color: #fff7eb;
+    text-align: center;
+    padding: 1.5rem;
+    background-color: #b7ac49;
+    border-radius: 1.3rem;
+    margin: 0 25rem 5rem 25rem;
+}
+
+.contact-header{
+  font-family: 'Oi', 'Playfair', sans-serif;
+    font-weight: 400;
+    color: #b7ac49;
+    font-size: 5rem;
+
+    display: Flex;
+    justify-content:center;
+    align-items: center;
+
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
 
 h2{
      font-size: 2.5rem;
@@ -137,6 +188,11 @@ h2{
     
 
 
+
+
+/* GALLERY PAGE */
+
+
 /* .Postcards-container{
     display: grid;
     grid-template-columns:1fr 1fr 1fr;
@@ -146,42 +202,32 @@ h2{
 } */
 
 
-.poster-container{
+/* .poster-container{
     display: grid;
     grid-template-rows:1fr 1fr 1fr;
     gap: 3rem;
     justify-content: center;
     margin-left: 8rem;
     margin-bottom: 2rem;
-}
-
-
-
-
-
-
-
-
-
+} */
 
 /* CAROUSEL ANIMATION */
 
-.carousel{
+/* .carousel{
     margin: 100px auto;
     width: 95%;
-    /* border: 5px solid #BD4C0F; */
     display: flex;
     overflow-y: hidden;
     flex-direction: column;
     height: 1000px;
-}
+} */
 
-.carousel::-webkit-scrollbar{
+/* .carousel::-webkit-scrollbar{
     display: none;
-}
+} */
 
 
-.Postcards-container{
+/* .Postcards-container{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -189,14 +235,14 @@ h2{
     gap: 2rem;
     animation: vertical-scroll 20s infinite linear;
     padding-right: 2rem;
-}
+} */
 
-.card{
+/* .card{
     flex: 0 0 auto;
     width: 80%;
     max-width: 420px;
     
-}
+} */
 
 /* @keyframes spin {
     from {translate: 0%;}
@@ -204,10 +250,10 @@ h2{
 } */
 
 
-@keyframes vertical-scroll {
+/* @keyframes vertical-scroll {
     from { transform: translateY(0%); }
     to   { transform: translateY(-100%); } 
-}
+} */
 
 
 /* .Arabic-typo{
