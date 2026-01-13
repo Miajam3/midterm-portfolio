@@ -80,7 +80,7 @@ a:hover{
 
 /* ABOUT PAGE */
 /* hello header */
-header{ 
+.hello-header{ 
 font-family: 'Oi', 'Playfair', sans-serif;
     font-weight: 400;
     color: #b7ac49;
@@ -191,92 +191,73 @@ h2{
 
 
 /* GALLERY PAGE */
+/* i need to figure out how to fix the spacing in general and for the breakpoints */
 
+.gallery-header{
+    font-family: 'Oi', 'Playfair', sans-serif;
+    font-weight: 400;
+    color: #b7ac49;
+    font-size: 7rem;
 
-/* .Postcards-container{
-    display: grid;
-    grid-template-columns:1fr 1fr 1fr;
-    gap: 3rem;
-    justify-content: center;
-    margin-left: 8rem;
-} */
-
-
-/* .poster-container{
-    display: grid;
-    grid-template-rows:1fr 1fr 1fr;
-    gap: 3rem;
-    justify-content: center;
-    margin-left: 8rem;
-    margin-bottom: 2rem;
-} */
-
-/* CAROUSEL ANIMATION */
-
-/* .carousel{
-    margin: 100px auto;
-    width: 95%;
-    display: flex;
-    overflow-y: hidden;
-    flex-direction: column;
-    height: 1000px;
-} */
-
-/* .carousel::-webkit-scrollbar{
-    display: none;
-} */
-
-
-/* .Postcards-container{
-    display: flex;
-    flex-direction: column;
+    display: Flex;
+    justify-content:center;
     align-items: center;
-    justify-content: center;
-    gap: 2rem;
-    animation: vertical-scroll 20s infinite linear;
-    padding-right: 2rem;
-} */
 
-/* .card{
-    flex: 0 0 auto;
-    width: 80%;
-    max-width: 420px;
-    
-} */
-
-/* @keyframes spin {
-    from {translate: 0%;}
-    to {translate: -100%;}
-} */
-
-
-/* @keyframes vertical-scroll {
-    from { transform: translateY(0%); }
-    to   { transform: translateY(-100%); } 
-} */
-
-
-/* .Arabic-typo{
-    background: #0C181D;
     padding: 2rem;
-    padding-bottom: 5rem;
-    
-} */
+    margin: 2rem ;
+}
+
+.gallery-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-top: 5rem;
+    margin-left: 8rem;    
+}
+
+.gallery img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
 
 
 
-/* RESPONSIVE DESIGN */
+@media (max-width: 900px) {
+    .gallery-container{
+        grid-template-columns: repeat(2, 1fr);
+        margin-left: 5rem;
+        margin-right: 2rem;
+    }
+}
+
+@media (max-width: 500px) {
+    .gallery-container{
+        grid-template-columns: 1fr;
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+
+    .gallery-header{
+        font-size: 3rem;
+    }
+}
+
+
+
+
+/* RESPONSIVE DESIGN FOR INDEX/HOME PAGE */
 
 @media (max-width: 768px) {
     
     nav{
         flex-direction: column;
         align-items: center;
-        order: 2;
+        order: 2;  /* order is to change the display order of the header and the nav so that the nav appears below the header */
     }
-
-    header{ 
-        font-size: 5rem;
+    
+    .portfolio-header{ 
+        font-size: 3rem;
         order: 1; 
     }
 }
@@ -287,7 +268,7 @@ h2{
 /* HERO FIGURE AND SPEECH BUBBLE */
 .hero-figure {
   position: relative; 
-  /* relative is the reference point for positioning child elements */
+/* relative is the reference point for positioning child elements */
 
 }
 
@@ -327,3 +308,5 @@ h2{
   border-right: 8px solid transparent;
   border-top: 8px solid white;
 }
+
+
