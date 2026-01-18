@@ -23,8 +23,6 @@ body{
 
     padding: 1rem;
     margin-bottom: 2rem ;
-    
-
 }
 
 a { 
@@ -51,15 +49,87 @@ nav{
 a:hover{
     background-color:#fff7eb5c;
     border-radius: 0.5rem;
+
 }
 
+/* HERO FIGURE AND SPEECH BUBBLE */
+.hero-figure {
+  position: relative; 
+/* relative is the reference point for positioning child elements */
+
+}
+
+.hero-image{
+    width: 35%;
+    display: block;
+    margin-right: auto;
+    margin-top: 3rem;
+    margin-bottom: -1rem;
+    position: absolute;
+}
+
+
+.speech-bubble {
+  position: absolute;
+
+  left: 400px;   /* distance from left (image width-ish) */
+  bottom: -70px; /* distance up from bottom */
+
+  background: white;
+  padding: 12px 16px;
+  border-radius: 16px;
+  font-size: 14px;
+}
+
+.speech-bubble::after {
+  content: "";
+  position: absolute;
+
+  bottom: -8px;
+  left: 20px;
+
+  width: 0;
+  height: 0;
+
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-top: 8px solid white;
+}
+
+/* RESPONSIVE DESIGN FOR INDEX/HOME PAGE */
+
+@media (max-width: 900px){
+    .portfolio-header{
+        font-size: 5rem;
+    }
+}
+
+
+@media (max-width: 500px) {
+    
+    nav{
+        flex-direction: column;
+        align-items: center;
+        order: 2;  /* order is to change the display order of the header and the nav so that the nav appears below the header */
+        margin-top: -4rem;
+    }
+    
+    .portfolio-header{ 
+        font-size: 3.5rem;
+        order: 1;
+        margin-top: 3rem; 
+    }
+
+}
+
+
+
+/* GALLERY PAGE */
 .gallery-page{
     background-color: #fff7eb;
     color: #0C181D;
 
 }
-
-
 
 .Home-button{
     color: #0C181D; 
@@ -246,67 +316,16 @@ h2{
 
 
 
-/* RESPONSIVE DESIGN FOR INDEX/HOME PAGE */
-
-@media (max-width: 768px) {
-    
-    nav{
-        flex-direction: column;
-        align-items: center;
-        order: 2;  /* order is to change the display order of the header and the nav so that the nav appears below the header */
-    }
-    
-    .portfolio-header{ 
-        font-size: 3rem;
-        order: 1; 
-    }
-}
 
 
 
 
-/* HERO FIGURE AND SPEECH BUBBLE */
-.hero-figure {
-  position: relative; 
-/* relative is the reference point for positioning child elements */
 
-}
 
-.hero-image{
-    width: 35%;
-    display: block;
-    margin-right: auto;
-    margin-top: 3rem;
-    margin-bottom: -1rem;
+.menu-icon{
+    width: 30px;
+    height: 30px;
     position: absolute;
+    cursor: pointer;
+    fill: #0C181D;
 }
-
-
-.speech-bubble {
-  position: absolute;
-
-  left: 400px;   /* distance from left (image width-ish) */
-  bottom: -70px; /* distance up from bottom */
-
-  background: white;
-  padding: 12px 16px;
-  border-radius: 16px;
-  font-size: 14px;
-}
-
-.speech-bubble::after {
-  content: "";
-  position: absolute;
-
-  bottom: -8px;
-  left: 20px;
-
-  width: 0;
-  height: 0;
-
-  border-left: 8px solid transparent;
-  border-right: 8px solid transparent;
-  border-top: 8px solid white;
-}
-
-
