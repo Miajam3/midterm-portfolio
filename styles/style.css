@@ -9,6 +9,7 @@ body{
 .top-section{
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 .portfolio-header{
@@ -56,7 +57,6 @@ a:hover{
 .hero-figure {
   position: relative; 
 /* relative is the reference point for positioning child elements */
-
 }
 
 .hero-image{
@@ -89,11 +89,8 @@ a:hover{
 
 .hero-figure:hover .speech-bubble{
     opacity: 1;
-    transform: opacity 0.3s ease;
-    
+    transform: opacity 0.3s ease;  
 }
-
-
 
 .speech-bubble::after {
   content: "";
@@ -134,6 +131,25 @@ a:hover{
         font-size: 3rem;
         order: 1;
         margin-top: 3rem; 
+        
+    }
+
+   .top-section{
+        align-items: center;
+        justify-content: center;
+    }
+
+    .hero-image{
+        width: 50%;
+        margin-top: 5rem;
+        justify-content: flex-end
+    }
+
+    .speech-bubble{
+        font-size: 1.5rem;
+        width: 12rem;
+        left: 15rem;
+        top: 8rem;
     }
 
 }
