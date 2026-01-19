@@ -66,20 +66,34 @@ a:hover{
     margin-top: 3rem;
     margin-bottom: -1rem;
     position: absolute;
+    cursor: pointer;
+}
+
+.speech-bubble{
+    font-size: 2rem;
+    font-family: 'montserrat', serif;
+    color: #0C181D;
+    text-align: center;
+
+    width: 15rem;
+    padding: 1rem;
+    background-color: #fff7eb;
+    border-radius: 1rem;
+
+    position: absolute;
+    left: 22rem;
+
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.hero-figure:hover .speech-bubble{
+    opacity: 1;
+    transform: opacity 0.3s ease;
+    
 }
 
 
-.speech-bubble {
-  position: absolute;
-
-  left: 400px;   /* distance from left (image width-ish) */
-  bottom: -70px; /* distance up from bottom */
-
-  background: white;
-  padding: 12px 16px;
-  border-radius: 16px;
-  font-size: 14px;
-}
 
 .speech-bubble::after {
   content: "";
@@ -93,19 +107,21 @@ a:hover{
 
   border-left: 8px solid transparent;
   border-right: 8px solid transparent;
-  border-top: 8px solid white;
+  border-top: 8px solid #fff7eb;
 }
+
+
 
 /* RESPONSIVE DESIGN FOR INDEX/HOME PAGE */
 
-@media (max-width: 900px){
+@media (max-width: 1023px){
     .portfolio-header{
         font-size: 5rem;
     }
 }
 
 
-@media (max-width: 500px) {
+@media (max-width: 767px) {
     
     nav{
         flex-direction: column;
@@ -115,7 +131,7 @@ a:hover{
     }
     
     .portfolio-header{ 
-        font-size: 3.5rem;
+        font-size: 3rem;
         order: 1;
         margin-top: 3rem; 
     }
