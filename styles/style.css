@@ -39,9 +39,9 @@ a {
 
 nav{
     display: Flex;
-    justify-content:end;
-    align-items: flex-start;
-    justify-content: space-around;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
     padding: 3rem;
     margin-top: 2rem ;    
 }
@@ -64,9 +64,9 @@ a:hover{
     display: block;
     margin-right: auto;
     margin-top: 3rem;
-    margin-bottom: -1rem;
     position: absolute;
     cursor: pointer;
+    bottom: auto;
 }
 
 .speech-bubble{
@@ -111,20 +111,27 @@ a:hover{
 
 /* RESPONSIVE DESIGN FOR INDEX/HOME PAGE */
 
-@media (max-width: 1023px){
+@media (max-width: 1250px){
     .portfolio-header{
-        font-size: 5rem;
+        font-size: 6rem;
+    }
+
+    nav{
+        margin-top: 1rem ;
+        padding: 2rem;
+        gap: 3rem;
     }
 }
 
 
-@media (max-width: 767px) {
+@media (max-width: 900px) {
     
     nav{
         flex-direction: column;
         align-items: center;
         order: 2;  /* order is to change the display order of the header and the nav so that the nav appears below the header */
         margin-top: -4rem;
+        gap: 1.5rem;
     }
     
     .portfolio-header{ 
@@ -146,10 +153,14 @@ a:hover{
     }
 
     .speech-bubble{
-        font-size: 1.5rem;
-        width: 12rem;
-        left: 15rem;
-        top: 8rem;
+        font-size: 0.8rem;
+        width: 10rem;
+        left: 8rem;
+        padding: 0.5rem;
+    }
+
+    .hero-image{
+        align-items: flex-end;
     }
 
 }
@@ -167,7 +178,8 @@ a:hover{
     color: #0C181D; 
     font-family: 'Montserrat';
     margin: 2rem;
-    margin-bottom: 5rem;
+    margin-bottom: 15rem;
+    margin-top: 15rem;
 
     
 }
@@ -175,122 +187,7 @@ a:hover{
 .Home-button:hover{
     background-color: #bd4c0f86;
     color: #fff7eb;
-    
-
 }
-
-
-/* ABOUT PAGE */
-/* hello header */
-.hello-header{ 
-font-family: 'Oi', 'Playfair', sans-serif;
-    font-weight: 400;
-    color: #b7ac49;
-    font-size: 5rem;
-
-    display: Flex;
-    justify-content:center;
-    align-items: center;
-
-    padding-top: 3.5rem;
-
-}
-
-.about-page { 
-    background-color: #fff7eb;
-    text-align: justify;
-}
-
-.about-container{
-    display: grid;
-    grid-template-columns: 3fr 3fr;
-    margin-left: 10rem;
-    margin-right: 10rem;
-    margin-top: 5rem;
-    margin-bottom: 10rem;
-    align-items: center;
-
-}
-
-.about-content {
-  display: flex;
-  flex-direction: column;
-  padding-right: 5rem;
-
-}
-
-.about-image{
-    width: 55%;
-    padding-left: 2rem;
-
-}
-
-.about-header{
-    font-size: 2.5rem;
-    font-family: 'Oi', 'Playfair', sans-serif;
-    color: #BD4C0F;
-    white-space: nowrap;
-    padding-top: 0;
-}
-
-
-p{
-    font-size: 1rem;
-    font-family: 'Montserrat', serif;
-    color:#0C181D;
-    line-height: 1.6rem;
-}
-
-.intro{
-    font-size: 1.3rem;
-    font-weight: 400;
-    font-family: 'Montserrat' ;
-    color: #BD4C0F;
-    text-align: center;
-    margin-bottom: 5rem;
-}
-
-/* SECTION FOR CONTACT */
-h2.contact-info{ 
-    font-size: 1.3rem;
-    font-weight: 400;
-    font-family: 'Montserrat' ;
-    color: #fff7eb;
-    text-align: center;
-    padding: 1.5rem;
-    background-color: #b7ac49;
-    border-radius: 1.3rem;
-    margin: 0 25rem 5rem 25rem;
-}
-
-.contact-header{
-  font-family: 'Oi', 'Playfair', sans-serif;
-    font-weight: 400;
-    color: #b7ac49;
-    font-size: 5rem;
-
-    display: Flex;
-    justify-content:center;
-    align-items: center;
-
-    padding-top: 5rem;
-    padding-bottom: 5rem;
-}
-
-
-h2{
-     font-size: 2.5rem;
-    font-family: 'Montserrat' ;
-    color: #BD4C0F;
-    text-align: center;
-    padding: 2rem;
-    margin-bottom: 5rem;
-    margin-top: 5rem;
-}
-    
-
-
-
 
 /* GALLERY PAGE */
 /* i need to figure out how to fix the spacing in general and for the breakpoints */
@@ -346,6 +243,177 @@ h2{
 }
 
 
+/* ABOUT PAGE */
+
+.hello-header{ 
+    font-family: 'Oi', 'Playfair', sans-serif;
+    font-weight: 400;
+    color: #b7ac49;
+    font-size: 5rem;
+
+    display: Flex;
+    justify-content:center;
+    align-items: center;
+
+    padding-top: 3.5rem;
+
+}
+
+.about-page { 
+    background-color: #fff7eb;
+    text-align: justify;
+}
+
+.about-container{
+    display: grid;
+    grid-template-columns: 3fr 3fr;
+    gap: 5rem;
+    margin-left: 10rem;
+    margin-right: 10rem;
+    margin-top: 5rem;
+    margin-bottom: 10rem;
+    align-items: center;
+    justify-items: center;
+
+}
+
+.about-content {
+  display: flex;
+  flex-direction: column;
+  padding-right: 5rem;
+
+}
+
+.about-image{
+    max-width: 55%;
+    padding-left: 2rem;
+
+}
+
+.about-header{
+    font-size: 2.5rem;
+    font-family: 'Oi', 'Playfair', sans-serif;
+    color: #BD4C0F;
+    white-space: nowrap;
+    padding-top: 0;
+}
+
+
+p{
+    font-size: 1rem;
+    font-family: 'Montserrat', serif;
+    color:#0C181D;
+    line-height: 1.6rem;
+    max-width: 31rem;
+}
+
+.intro{
+    font-size: 1.3rem;
+    font-weight: 400;
+    font-family: 'Montserrat' ;
+    color: #BD4C0F;
+    text-align: center;
+    margin-bottom: 5rem;
+}
+
+/* ABOUT PAGE RESPONSIVE DESIGN */
+@media (max-width: 1250px) {
+    .about-container{
+        grid-template-columns: 1fr;
+        gap: 5rem;
+        margin: auto;
+    }
+
+    .about-image{
+        max-width: 50%;
+        padding-left: 0;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .about-content {
+        padding-right: 0;
+        
+    }
+
+    .hello-header{
+        font-size: 4rem;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+}
+
+@media (max-width: 900px) {
+    .hello-header{
+        font-size: 3rem;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .about-content{
+        padding: 1.5rem;
+    }
+
+
+}
+
+/* SECTION FOR CONTACT */
+h2.contact-info{ 
+    font-size: 1rem;
+    font-weight: 400;
+    font-family: 'Montserrat' ;
+    color: #fff7eb;
+    text-align: center;
+    padding: 1.5rem;
+    background-color: #b7ac49;
+    border-radius: 1.3rem;
+    margin: 0 25rem 5rem 25rem;
+}
+
+.contact-header{
+  font-family: 'Oi', 'Playfair', sans-serif;
+    font-weight: 400;
+    color: #b7ac49;
+    font-size: 5rem;
+
+    display: Flex;
+    justify-content:center;
+    align-items: center;
+
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+    
+
+/* CONTACT SECTION RESPONSIVE DESIGN */
+@media (max-width: 1250px) {
+    h2.contact-info{
+        font-size: 1;
+        min-width: 15rem ;
+        margin: 0;
+        margin-bottom: 2rem;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .contact-header{
+        font-size: 4rem;
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+        text-align: center;
+    }
+}
+
+@media (max-width: 900px) {
+
+    .contact-header{
+        font-size: 3rem;
+    
+    }
+}
 
 
 
