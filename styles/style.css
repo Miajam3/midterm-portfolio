@@ -268,8 +268,8 @@ a:hover{
     display: grid;
     grid-template-columns: 3fr 3fr;
     gap: 5rem;
-    margin-left: 10rem;
-    margin-right: 10rem;
+    margin-left: 5rem;
+    margin-right: 15rem;
     margin-top: 5rem;
     margin-bottom: 10rem;
     align-items: center;
@@ -277,12 +277,7 @@ a:hover{
 
 }
 
-.about-content {
-  display: flex;
-  flex-direction: column;
-  padding-right: 5rem;
 
-}
 
 .about-image{
     max-width: 55%;
@@ -333,6 +328,7 @@ p{
 
     .about-content {
         padding-right: 0;
+        max-width: 100%;
         
     }
 
@@ -354,6 +350,15 @@ p{
 
     .about-content{
         padding: 1.5rem;
+        max-width: 100%;
+    }
+
+    
+
+    .about-page{
+        justify-content: center;
+        align-items: center;
+        max-width: 100%;
     }
 
 
